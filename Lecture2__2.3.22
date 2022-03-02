@@ -1,8 +1,9 @@
 #Objects have methods(=function) and values/attributes
+#pandas.pydata
 
 
 class person:
-  self.age                       #age is attribute
+  self.age                       # age is attribute
   self.gender
   def write_person():
     print(self.age, self.gender)
@@ -14,4 +15,38 @@ sigve.write_person()
 anobject = 12
 
 --------
+multiply list with real number:
+alist=[1,2,3]
+alist*3                         # gives the list three times [1,2,3,1,2,3,1,2,3]
+
+                                # -> use numpy
+
+import numpy as np
+alist= np.array([1,2,3])
+alist*3 
+                                # Ausgabe: array([3,6,9])
+
+--------
+deleting something from a list:
+
+example:
+alist=['a',1,'hi',999]
+alist.pop(1)                    #Ausgabe(1)
+alist                           #Ausgage['a','hi',999]
+del alist[0]
+alist                           #Ausgabe['hi',999]
+
+--------
+path to google drive:
+path = '/content/drive/MyDrive/DataScienceFundamentals/Absorbance.txt'
+
+--------
+Github
+Graphical user interface, web application, software respository
+version control system, saves all the changes and one can go back, reproducibility
+jupyter notebook: make python code, draw, calculate, share, graphics, has a version
+
+
+
+
 
