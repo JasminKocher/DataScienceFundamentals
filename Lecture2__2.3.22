@@ -46,6 +46,25 @@ Graphical user interface, web application, software respository
 version control system, saves all the changes and one can go back, reproducibility
 jupyter notebook: make python code, draw, calculate, share, graphics, has a version
 
+--------
+XOR is exclusive or, only one is fulfilled
+
+--------
+dictionnary/tuple
+list[5,6,3]                     #order doesn't matter
+tuple[1,2,3,4]                  #order is important
+dictionary{'auto':'car', 'bike':'velo']      
+                                # ->can look something up by name
+adid['auto']                    #Ausgabe: 'car'
+
+one can also put a list/tuple into a dictionarry
+
+--------
+
+
+
+
+
 
 
 
