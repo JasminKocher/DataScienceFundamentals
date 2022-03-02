@@ -1,0 +1,17 @@
+#Objects have methods(=function) and values/attributes
+
+
+class person:
+  self.age                       #age is attribute
+  self.gender
+  def write_person():
+    print(self.age, self.gender)
+    
+sigve=person(49, 'm')
+sigve.write_person()
+
+
+anobject = 12
+
+--------
+
