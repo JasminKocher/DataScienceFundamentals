@@ -1,0 +1,95 @@
+Questions:
+
+--------
+import re           #regular expression module
+l= 'this 34 a tex with some 12 numbers 45'
+numbers =re.findall('\d+',l)
+numbers
+#Ausgabe['34', '12', '45']
+(We'll look at this in two weeks)
+
+--------
+Save part of a text file as a new file?
+
+url=^https:\\unibe.ch'/myfile.csv'
+df= pd.read_csv(url, header=13)       #reads now everything below line 13
+df.write()
+
+f= open('test.txt', 'w')      #w=writable
+l= """
+impert.re
+l= 'this 34 a tex with some 12 numbers 45'
+numbers =re.findall('\d+',l)
+numbers
+"""
+f.write(l)
+f.close()
+
+! ls-l
+
+fin= open('test.txt','r')
+lines= fin.readlines()
+lines
+fout= open('outtest.txt','w')
+fout.writelines(lines[0:3])
+fout.close()
+
+! cat outtest.txt
+
+--------
+Change size of a file?
+
+import numpy as np
+import matplotlib.pyplot as plt
+plt.figure(figsize=[5,5],dpi=200)
+x=np.linspace(-1,1,20)
+y=np.random.normal(0,1,20)
+plt.plot(x,y)
+plt.show()
+
+--------
+Gap in Data frames, find out wether there are any or not?
+
+#"gaps" : MN(missing number), NaN, NA. 
+#newdf=df.isnull()
+#newdf=df.isnan()
+                  #Gives true, if there is no number
+                  
+--------                  
+Lambda?
+Trick to write functions in one line (and not use multiple lines) -> fast way to write simple functions
+
+def square(x):
+   return x**2
+square(4)
+      #Ausgabe: 16
+      
+Lambda function:
+square=lambda x: x**2
+spare(2)
+      #Ausgabe: 4
+    
+Disatvantage: limited whats in one line and it doesen't have a name and makes your code hard to read
+
+--------      
+Factor refers to the numbers in L[]
+z.B. L[5,10,12,15]
+
+--------
+Count number of time stampes?
+
+count rows
+dataframe.info
+
+--------
+Operating system module/shell utilities module?
+
+example: regular data, store all data into another facility
+         or for reorganizing/renaming a lot of files
+         
+--------
+*arg, **kwargs
+
+can take arguments which are not defined, flexible amount of argument
+
+
